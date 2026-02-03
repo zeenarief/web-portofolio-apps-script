@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Zainal Arifin</title>
+  <?!= include('style'); ?>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <div class="logo">./Dev<span>ZeenArif</span></div>
+    <ul class="nav-links">
+      <li><a href="#skills">Skil</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+      <li><a href="mailto:zeenarief@example.com" class="btn-small">Hire Me</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-text">
+      <span class="badge">Fresh Graduate S1 Informatika</span>
+      <h1>Membangun Solusi <span class="highlight">IoT & Web</span> dengan Kode yang Efisien.</h1>
+      <p>Halo! Saya <strong>Zainal Arifin</strong>. Seorang Full-Stack Developer yang berpengalaman dalam pengembangan sistem IoT menggunakan ESP32 dan backend menggunakan Go.</p>
+      <div class="cta">
+        <a href="#projects" class="btn-main">Lihat Project</a>
+        <a href="#" class="btn-outline">Unduh CV</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="skills" class="skills">
+    <h3>Tech Stack & Keahlian</h3>
+    <div class="skill-grid">
+      <div class="skill-card">Go (Golang)</div>
+      <div class="skill-card">React.js</div>
+      <div class="skill-card">ESP32 / IoT</div>
+      <div class="skill-card">Machine Learning</div>
+      <div class="skill-card">PostgreSQL/MySQL</div>
+      <div class="skill-card">GIS (ArcMap)</div>
+    </div>
+  </section>
+
+  <section id="projects" class="skills" style="background: rgba(30, 41, 59, 0.5);">
+    <h3>Proyek Terbaru</h3>
+    <div class="skill-grid">
+      <div class="skill-card" style="color: white; width: 300px; padding: 20px;">
+        <h4 style="color: var(--primary)">Smart Egg Incubator</h4>
+        <p style="font-size: 0.9rem; margin: 10px 0;">Sistem penetas telur berbasis ESP32 dengan kendali suhu Machine Learning (Random Forest).</p>
+      </div>
+      <div class="skill-card" style="color: white; width: 300px; padding: 20px;">
+        <h4 style="color: var(--primary)">School Info Backend</h4>
+        <p style="font-size: 0.9rem; margin: 10px 0;">Sistem informasi sekolah yang dibangun menggunakan bahasa Go.</p>
+      </div>
+      <div class="skill-card" style="color: white; width: 300px; padding: 20px;">
+        <h4 style="color: var(--primary)">RFID Attendance</h4>
+        <p style="font-size: 0.9rem; margin: 10px 0;">Sistem presensi kantor desa Gentan berbasis RFID dan IoT.</p>
+      </div>
+    </div>
+  </section>
+
+  <?!= include('script'); ?>
+</body>
+</html>
